@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap and Moments</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-toggle="tooltip" data-target="#exampleModal" data-placement="bottom" title="Tooltip on bottom">
-    Launch demo modal
+<button type="button" class="btn btn-primary" data-toggle="modal" data-toggle="tooltip" data-target="#exampleModal" data-placement="bottom" title="Click to show the modal window">
+    Show Modal Window
 </button>
-  
+
+<button type="button" id="toggleBtn" class="btn btn-primary">
+    Toggle Alert
+</button>
+
+<div class="alert alert-danger alert-dismissible hidden" role="alert">
+    ALAAAAARM !!!
+</div>
+
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -34,9 +43,51 @@
     </div>
   </div>
 
+    <!-- My Birthday -->
+    <div class="date-box">
+        <div class="date__cell">
+            My birthday is: 
+        </div>
+        <div class="date__cell date__cell-color" id="date__cell">
+
+        </div>
+    </div>
+
+    <!-- User's Birthday -->
+    <div class="inputs">
+        <div class="input-box">
+            <div class="input__description">
+                Enter your year of birth:
+            </div>
+            <input type="text" class="input" id="input-year" placeholder="YYYY">
+        </div>
+        <div class="input-box">
+            <div class="input__description">
+                Enter your month of birth:
+            </div>
+            <input type="text" class="input" id="input-month" placeholder="MM">
+        </div>
+        <div class="input-box">
+            <div class="input__description">
+                Enter your day of birth:
+            </div>
+            <input type="text" class="input" id="input-day" placeholder="DD">
+        </div>
+        <input type="button" class="buttons" id="buttonSubmit" value="Show User's Birthday">
+        <div class="input-box">
+            <div class="input__description">
+                User's Birthday is:
+            </div>
+            <div class="input__result"></div>
+        </div>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/functions.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

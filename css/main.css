@@ -1,0 +1,37 @@
+.hidden {
+    display: none;
+}
+
+.date-box {
+    max-width: 220px;
+    display: flex;
+    margin-top: 30px;
+    border: 1px solid #000000;
+}
+
+.date__cell {
+    padding: 5px;
+}
+
+.date__cell-color {
+    color: #ff0000;
+}
+
+.inputs {
+    margin-top: 30px;
+    max-width: 220px;
+    border: 1px solid #000000;
+}
+
+.buttons {
+    margin: 20px 0;
+    width: 200px;
+}
+
+.input {
+    width: 200px;
+}
+
+.incorrect {
+    background-color: #ff000081;
+}
